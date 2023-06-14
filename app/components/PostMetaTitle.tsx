@@ -1,7 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 
-export default function PostMetaTitle({category, date, title, center}) {
+interface Props {
+    category:string,
+    date:string,
+    title:string,
+    center?:boolean
+}
+
+export default function PostMetaTitle({category, date, title, center}: Props) {
   return (
    <>
         <div className="flex items-center text-white/60 space-x-4">

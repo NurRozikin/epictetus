@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default function PostAuthor({authorAvatar, authorName, authorJob}) {
+interface Props {
+  authorAvatar:string,
+  authorName:string,
+  authorJob:string
+}
+
+export default function PostAuthor({authorAvatar, authorName, authorJob}:Props) {
   return (
     <>
         <div className="flex items-center mt-6">
